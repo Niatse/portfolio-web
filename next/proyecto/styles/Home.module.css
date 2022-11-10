@@ -15,7 +15,7 @@
   text-align: -webkit-match-parent;
   position: relative;
     margin-bottom: 10px;
-    padding-left: 50px;
+    padding-left: 10px;
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
 }
@@ -205,3 +205,6 @@
     display:block;
 }
 
+.ul{
+  margin: 10px;
+}
