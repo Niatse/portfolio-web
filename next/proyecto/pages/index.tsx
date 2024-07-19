@@ -2,6 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
+
+
+
 export default function Home() {
   return (
     
@@ -15,28 +19,29 @@ export default function Home() {
 
 <section id='presentation'>
 
-
    <h1 className={styles.title}>
-          Hi, my name is 
+         ¡Hola! Mi nombre es
          
         </h1>
       <h2 className={styles.name}>Sebastian.<br></br>
-      <span className={styles.sub}>I build things for web.</span>
+      <span className={styles.sub}>Creo soluciones en la web.</span>
       </h2>
      
         <p className={styles.description}>
-         I'm a frontend software developer with a strong passion for building responsive and performant web applications<br></br> with great user experiences that positively impacts the world.<br></br>
-         Currently, I'm focused on building web applications with Nextjs. 
-        </p>
+        Soy un apasionado desarrollador web FrontEnd, dedicado a crear aplicaciones web altamente responsivas y de excelente rendimiento. Mi objetivo es diseñar experiencias de usuario excepcionales que no solo cumplan con las expectativas, sino que también impulsen y realcen tu producto. Con un enfoque en la innovación y la eficiencia, transformo tus ideas en realidades digitales que destacan.        </p>
 
-      <h2 className={styles.title}>01. <span>About Me</span></h2>
-      <p className={styles.description}>Hello! My name is Sebastian Benitez and I'm from Uruguay. I really enjoy creating things that live on the internet. My interest in web development starts in 2020 with the pandemic of Covid-19. From there i started learning a lot of things about FrontEnd, like Html5, Css ,Javscript, React, Nextjs and Git, but I'm always learning new things!<br></br>I worked in some projects like <a href='https://www.padeltop.es/'>Padel Top </a>and <a href='http://www.aulapadel.com/'>Aula padel </a> , which are webs about a club and academy of Padel. <br></br>Here are a few technologies I've been working with recently: </p>
+      <h2 className={styles.title}>01. <span>Acerca de mi</span></h2>
+      <p className={styles.description}>¡Hola! Mi nombre es Sebastián Benítez y soy de Uruguay. Disfruto mucho creando cosas que viven en internet. Mi interés por el desarrollo web comenzó en 2020 con la pandemia de Covid-19. Desde entonces, empecé a aprender muchas cosas sobre FrontEnd, tales como, HTML5, CSS, JavaScript, React, Next.js y Git. A su vez tengo experiencia utilizando CMS como Wordpress. ¡Pero siempre estoy aprendiendo cosas nuevas!
+
+He trabajado en proyectos de distinto tipo, los cuales puedes ver en la sección de proyectos </p>
      <ul className={styles.ul}>
        <li className={styles.li}>NextJs</li>
      <li className={styles.li}>React</li>
      <li className={styles.li}>Javascript</li>
      <li className={styles.li}>Tailwind CSS</li>
      <li className={styles.li}>Html5</li>
+     <li className={styles.li}>Wordpress</li>
+
      </ul>
     
      </section>
@@ -44,34 +49,93 @@ export default function Home() {
      <section id='projects'>
       
      
-     <h2 className={styles.title}>02. <span>Some Things I've Built</span></h2>
+     <h2 className={styles.title}>02. <span>Proyectos/Trabajos</span></h2>
 
       <main className={styles.main}>
       
         
-     
+      <div className={styles.card}>
+            <h2 className={styles.name2}>Fronteras Gaming</h2>
+            <p className={styles.description2}>Landing para proyecto de E-Sports en Latam.<br></br>
+            Tecnologias: Wordpress</p>
+           <a href='https://fronterasgaming.com/'> 
+            
+           <Image className={styles.img}
+      
+      src="/fronterasgaming.png"
+      alt="Fronteras Gaming"
+      unoptimized
+      width={300}
+      height={300}
+      
+      layout="intrinsic"
+    />
+            
+            </a> 
+
+          </div>
+          <div className={styles.card}>
+            <h2 className={styles.name2}>Joyeria Szpigiel</h2>
+            <p className={styles.description2}>E-Commerce para joyeria en Argentina.<br></br>
+            Tecnologias: Wordpress & Woocomerce</p>
+           <a href='https://joyeriaszpigiel.com/'> 
+            
+           <Image className={styles.img}
+      
+      src="/joyeriaszpigiel.png"
+      alt="Joyeria Szpigiel"
+      unoptimized
+      width={300}
+      height={300}
+      layout="intrinsic"
+    />
+            
+            </a> 
+          </div>
+
+          <div className={styles.card}>
+            <h2 className={styles.name2}>EntreFronterasRP</h2>
+            <p className={styles.description2}>Servidor de Roleplay en Fivem.<br></br>
+            Lua, VPS, Admin. BD, JavaScript, Html, Css, etc</p>
+           <a href='https://www.instagram.com/entrefronterasrp/'> 
+            
+           <Image className={styles.img}
+      
+      src="/entrefronterasrp.png"
+      alt="EntreFronterasRP"
+      unoptimized
+      width={300}
+      height={300}
+      layout="intrinsic"
+    />
+            
+            </a> 
+          </div>
+
           
           <div className={styles.card}>
             <h2 className={styles.name2}>Cars Uruguay</h2>
-            <p className={styles.description2}>This project show cars from a database<br></br>
-            Stack used: Nextjs And Supabase</p>
+            <p className={styles.description2}>Recopilacion de autos de una base de datos<br></br>
+            Tecnologias: Nextjs & Supabase</p>
            <a href='https://carsuruguay.vercel.app'> 
             
            <Image className={styles.img}
       
       src="/carsuruguay.png"
       alt="CarsUruguay"
+      unoptimized
       width={300}
       height={300}
+      layout="intrinsic"
     />
             
             </a> 
-    <a className={styles.a} href='https://github.com/Niatse/Galeria-Imagenes'>Github Repository</a>
+
           </div>
 
           <div className={styles.card}>
-            <h2 className={styles.name2}>Rick And Morty API</h2>
-            <p className={styles.description2}>This page shows the characters from Rick and Morty. Stack used: Nextjs And Supabase
+            <h2 className={styles.name2}>Rick y Morty API</h2>
+            <p className={styles.description2}>Muestra de personajes de Rick y Morty mediante API.    Tecnologias: Nextjs & Supabase
            </p>
            <a href='https://rickmortyapiniatse.netlify.app'> 
             
@@ -81,28 +145,31 @@ export default function Home() {
       alt="Rick and Morty"
       width={300}
       height={300}
+      unoptimized
+      layout="intrinsic"
     />
             
             </a> 
-    <a className={styles.a} href='https://github.com/Niatse/Uso-de-api-Rick-and-Morty'>Github Repository</a>
           </div>
 
           <div className={styles.card}>
             <h2 className={styles.name2}>Coin Niatse</h2>
-            <p className={styles.description2}>This project show the top 100 cryptos<br></br>
-            Stack used: Html5 Javascript & Css</p>
+            <p className={styles.description2}>Listado de las top 100 Criptomonedas en tiempo real<br></br>
+            Tecnologias: Html5 Javascript & Css</p>
            <a href='https://coiniatse.netlify.app'> 
             
            <Image className={styles.img}
       
       src="/cripto.png"
       alt="Cripto"
+      unoptimized
       width={300}
       height={300}
+      layout="intrinsic"
+
     />
             
             </a> 
-    <a className={styles.a} href='https://github.com/Niatse/CoinNiatse-Prod'>Github Repository</a>
           </div>
          
          
@@ -110,12 +177,13 @@ export default function Home() {
       </section>
       <section id='contact'>
 
-      <h2 className={styles.title}>03. <span>What's Next?</span></h2>
-          <h2 className={styles.name}>Get In Touch</h2>
-          <p className={styles.description}>I'm currently looking for new and interesting projects,my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+      <h2 className={styles.title}>03. <span>¿Que sigue?</span></h2>
+          <h2 className={styles.name}>Ponerse en contacto
+          </h2>
+          <p className={styles.description2}>Actualmente estoy buscando proyectos nuevos e interesantes, mi bandeja de entrada está siempre abierta. Si tienes alguna pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!</p>
           
 
-      <a className={styles.email} href='malito:gameerseba@gmail.com'>Contact me</a>
+      <a className={styles.email} href='malito:sebastianbenitez2505@gmail.com'>Contactame</a>
       <footer className={styles.footer}>
         
           Powered by Seba Web Dev
